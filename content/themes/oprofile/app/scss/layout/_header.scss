@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+
+    &.fixed {
+        position: fixed;
+        width: 100%;
+        background-image: linear-gradient(
+            to right,
+            $color-brand,
+            $color-brand-alt
+        );
+    }
+
+}
