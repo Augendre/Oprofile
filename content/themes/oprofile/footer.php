@@ -1,22 +1,10 @@
 </main>
         <footer class="footer" id="contact">
-            <form action="" class="contact-form">
-                <div class="field is-half">
-                    <label for="name">Nom</label>
-                    <input type="text" name="name">
-                </div>
-                <div class="field is-half">
-                    <label for="email">Email</label>
-                    <input type="email" name="email">
-                </div>
-                <div class="field">
-                    <label for="message">Message</label>
-                    <textarea name="message"></textarea>
-                </div>
-                <div class="field">
-                    <input type="submit" value="Envoyer">
-                </div>
-            </form>
+            <div class="contact-form">
+                <?php             
+                    echo do_shortcode('[contact-form-7 id="36" title="Formulaire de contact footer"]')
+                ?>
+            </div>
             <address class="contact-info">
                 <div class="contact-info__part">
                     <i class="fa fa-envelope" aria-hidden="true"></i>

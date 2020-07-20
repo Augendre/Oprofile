@@ -7,7 +7,7 @@ require 'inc/enqueue.php';
 require 'inc/theme-setup.php';
 
 // Inclusion des shortcodes
-//! require 'inc/shortcodes.php';
+require 'inc/shortcodes.php';
 
 // Inclusion du customizer
 //! require 'inc/customizer.php';
