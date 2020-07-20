@@ -20,7 +20,7 @@ if (!function_exists('shortcodeCitation')) {
 add_shortcode('citation', 'shortcodeCitation');
 
 
-//
+// shortcode to come back home
 if (!function_exists('shortcodeBackhome')) {
     function shortcodeBackhome($atts) {
         $buttonHome = shortcode_atts([

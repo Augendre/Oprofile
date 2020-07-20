@@ -6,25 +6,30 @@
                 ?>
             </div>
             <address class="contact-info">
+            <?php if (get_theme_mod('oprofile_footer_email')) : ?>
                 <div class="contact-info__part">
                     <i class="fa fa-envelope" aria-hidden="true"></i>
                     <h4 class="contact-info__part__label">Email</h4>
-                    <a href="mailto:coucou@oclock.io" class="content-info__part__content">coucou@oclock.io</a>
+                    <a href="mailto:<?php echo get_theme_mod('oprofile_footer_email'); ?>" class="content-info__part__content"><?php echo get_theme_mod('oprofile_footer_email'); ?></a>
                 </div>
+            <?php endif; ?>
+            <?php if (get_theme_mod('oprofile_footer_num')) : ?>
                 <div class="contact-info__part">
                     <i class="fa fa-phone" aria-hidden="true"></i>
                     <h4 class="contact-info__part__label">Téléphone</h4>
-                    <a href="tel:0169454545" class="content-info__part__content">+33 1 69 45 45 45</a>
+                    <a href="tel:<?php echo get_theme_mod('oprofile_footer_num'); ?>" class="content-info__part__content"><?php echo get_theme_mod('oprofile_footer_num'); ?></a>
                 </div>
+            <?php endif; ?>
+            <?php if (get_theme_mod('oprofile_footer_address')) : ?>
                 <div class="contact-info__part">
                     <i class="fa fa-home
                     " aria-hidden="true"></i>
                     <h4 class="contact-info__part__label">Adresse</h4>
                     <p class="contact-info__part__content">
-                        223 allée de la gare<br>
-                        44000 Nantes
+                    <?php  echo nl2br(get_theme_mod('oprofile_footer_address')); ?>
                     </p>
                 </div>
+            <?php endif; ?>
             </address>
         </footer>
     </div>

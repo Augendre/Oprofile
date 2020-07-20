@@ -10,7 +10,7 @@ require 'inc/theme-setup.php';
 require 'inc/shortcodes.php';
 
 // Inclusion du customizer
-//! require 'inc/customizer.php';
+require 'inc/customizer.php';
 
 // Mise en forme de mes var_dump()
 function dump($var) {
