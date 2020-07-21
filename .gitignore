@@ -5,5 +5,7 @@ wp-config.php
 /content/upgrade
 /content/uploads
 /content/plugins/*
+!/content/plugins/o-projects
+!/content/plugins/o-redirect-to
 /content/themes/*
 !/content/themes/oprofile
