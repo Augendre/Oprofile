@@ -14,11 +14,15 @@ endwhile; endif ;
 
     // boucle pour aller chercher les articles
     // 1. Arguments pour la boucle custom
+    if (get_theme_mod('oprofile_posts_count')) {
+        $post_per_page = get_theme_mod('oprofile_posts_count');
+    }
+
     $args = [
         'post_type' => 'post',
-        'posts_per_page' => 6,
+        'posts_per_page' => $post_per_page,
         'orderby' => 'ASC',
-        'category__not_in' => 2
+        'category_name' => get_theme_mod( 'oprofile_home_category_display' )
     ];
 
     //2. Instanciation WP_Query avecles arguments

@@ -3,7 +3,7 @@
 // shortcode to show date and time
 if (!function_exists('shortcodeTimestamp')) {
     function shortcodeTimestamp() {
-        return '<p>Nous sommes le ' . date("d/m/Y") . ' et il est ' . date("H:i") . '</p>';
+        return '<p>Nous sommes le ' . date("d/m/Y") . '</p>';
     }
 }
 
