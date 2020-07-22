@@ -22,8 +22,7 @@ function oprofile_home($wp_customize) {
             // Input attributs
             'input_attrs' => [
                 'min' => 0,
-                'max' => 10,
-                'step' => 2
+                'max' => 10
             ],
             // Section where show the control
             'section' => 'oprofile_home',

@@ -44,9 +44,7 @@ endwhile; endif ;
     // boucle pour aller chercher les skills
     // 1. Arguments pour la boucle custom
     $args = [
-        'category_name' => 'skill',
-        'posts_per_page' => 6,
-        'orderby' => 'ASC'
+        'category_name' => 'skill'
     ];
 
     //2. Instanciation WP_Query avecles arguments

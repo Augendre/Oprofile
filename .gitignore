@@ -1,11 +1,13 @@
 /vendor
 /wp
-wp-config.php
+/wp-config.php
 /content/languages
 /content/upgrade
 /content/uploads
 /content/plugins/*
 !/content/plugins/o-projects
-!/content/plugins/o-redirect-to
+!/content/plugins/o-redirectTo
+!/content/plugins/o-roles
+!/content/plugins/o-skills
 /content/themes/*
 !/content/themes/oprofile

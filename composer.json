@@ -11,7 +11,9 @@
         "wpackagist-theme/twentytwenty": "*",
         "wpackagist-plugin/advanced-custom-fields": "^5.8",
         "wpackagist-plugin/advanced-custom-fields-font-awesome": "^3.1",
-        "wpackagist-plugin/contact-form-7": "^5.2"
+        "wpackagist-plugin/contact-form-7": "^5.2",
+        "wpackagist-plugin/simply-show-hooks": "^1.2",
+        "wpackagist-plugin/what-the-file": "^1.5"
     },
     "extra": {
         "wordpress-install-dir": "wp",

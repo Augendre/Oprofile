@@ -2,7 +2,7 @@
 
 /*
 Plugin Name: oProjects
-Description: Plugin to manage the projects portfolio
+Description: un plugin permettanbt de gérer votre portfolio de projets
 Version: 1.0
 */
 
@@ -41,8 +41,8 @@ class oProjects
             'labels' => $labels,
             'public' => true,
             'hierarchical' => false,
-            // show_in_rest = true  for Gutenberg editor
-            'show_in_rest' => true,
+            // on met show_in_rest à true si on souhaite l'éditeur Gutenberg
+            'show_in_rest' => false,
             'menu_position' => 4,
             'menu_icon' => 'dashicons-portfolio',
             'supports' => [
@@ -70,7 +70,7 @@ class oProjects
             [
                 'label' => 'Clients',
                 'labels' => [
-                    'choose_from_most_used' => 'Choisissez parmis les clients réccurents',
+                    'choose_from_most_used' => 'Choisissez parmis les clients récurrents',
                     'separate_items_with_commas' => 'Séparez les clients par des virgules'
                     // etc....
                 ],
@@ -88,6 +88,9 @@ class oProjects
             'project',
             [
                 'label' => 'Technologies',
+                'labels' => [
+                    'add_new_item' => 'Ajouter une nouvelle technologie'
+                ],
                 'public' => true,
                 'hierarchical' => true,
                 'show_admin_column' => true,
